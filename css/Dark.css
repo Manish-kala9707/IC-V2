@@ -1,0 +1,415 @@
+
+/* Dark define here */
+.theme-dark {
+  background-color: #000000 !important;
+  color: #FFFF00 !important;
+  transition: 0.3s ease-in-out;    
+}
+/* Dark theme for Topbar start here */
+.theme-dark.topbar{
+  background: #000000 !important;
+  transition:0.5s;
+  /* border-bottom: 5px solid #FFFF00 !important; */
+}
+.theme-dark img{
+  filter: grayscale(1);
+  
+}
+.theme-dark .filtericon {
+  border-radius: 0%;
+  background-color: #FFFF00;
+}
+.theme-dark .tirangaflg{
+  filter: grayscale(0);
+}
+.theme-dark #iclogo{
+  filter: grayscale(1);
+}
+/*.........................................................................................*/
+
+/* menubar or header */
+.theme-dark #navbar{
+/* background-color: #FFFF00 !important; */
+border-color: #000000 !important;
+}
+/* .theme-dark #hamburger{
+background-color: #e5e5e5;
+} */
+/*.........................................................................................*/
+
+/*Banner video start here */
+
+.theme-dark video{
+  filter: grayscale(1);
+}
+/*.........................................................................................*/
+
+/* Switch toggle */
+.theme-dark .slider  {
+  background-color: #FFFF00 !important;
+}
+.theme-dark .slider:before{
+  background-color: #000000;
+}
+/*.........................................................................................*/
+
+/* Categories card start here */
+.theme-dark .categoriescard{
+  background-color: #000000 ;
+  border: 1px solid #FFFF00 !important;
+}
+.theme-dark .circle{
+  background-color: #000000 ;
+  border: 1px solid #FFFF00;
+}
+.theme-dark .overlay{
+  background-color: #000000 ;
+  border: 1px solid #FFFF00;
+}
+
+.theme-dark .bibilography {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .stories {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .north-east_archives {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .ajanta_caves {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+.theme-dark .textile_fab {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .historic_cities {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+/*  */
+.theme-dark .snippets {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .forts_of_india {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .e-books {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .musical_instrument {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+.theme-dark .archives {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .audios {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+/*  */
+.theme-dark .food_culture {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .images {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .photo_archives {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .other_collections {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+.theme-dark .stories {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .painting {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+/*  */
+.theme-dark .reports {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .cultural_heritage {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .videos {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .unesco {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+.theme-dark .research_paper {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .photo_essay {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+/*  */
+.theme-dark .rarebook {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .manuscript {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .museum_collections {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+.theme-dark .gazettes {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+.theme-dark .union_catalogue {
+  --bg-color: #FFFF00;
+  --bg-color-light: #FFFF00;
+  --text-color-hover: #000000;
+  --box-shadow-color: #FFFF00;
+}
+
+
+/*.........................................................................................*/
+/* Freedom arcchive */
+.theme-dark .freed{
+  background-color: #000000;
+}
+/* Heading, subheading, Text and para start here */
+.theme-dark h1{
+  color: #FFFF00 !important;
+}
+.theme-dark h2{
+  color: #FFFF00 !important;
+}
+.theme-dark h3{
+  color: #FFFF00 !important;
+}
+.theme-dark p{
+  color: #FFFF00 !important;
+}
+.theme-dark a{
+  color: #000000 !important;
+}
+.theme-dark a{
+  color: #FFFF00 !important;
+}
+.theme-dark .highcont{
+  color: #FFFF00 !important;
+}
+.theme-dark .offcanvas-header{
+  border: #a6b42c !important;
+  color: #FFFF00 !important
+}
+.theme-dark .news-card{
+  border: 2px solid yellow;
+}
+/*.........................................................................................*/
+
+/* All homepage btns */
+.theme-dark Button{
+color: #000000 !important;
+background-color: #FFFF00 !important;
+border-color: #FFFF00;
+}
+.theme-dark Button:hover{
+color: #FFFF00 !important;
+background-color: #000000 !important;
+border: 1px solid #FFFF00 !important;
+}
+
+/*.........................................................................................*/
+
+/* rarebook next btn */
+/* .theme-dark .next-button:hover{
+color: #FFFF00 !important;
+background-color: #000000 !important;
+border: 1px solid #FFFF00 !important;
+} */
+
+
+
+/*.........................................................................................*/
+
+/*glider start here*/
+
+/* .theme-dark .glider{
+background-color: #FFFF00;
+} */
+.theme-dark .glider-prev {
+background-color: #FFFF00 !important;
+
+}
+.theme-dark .glider-next{
+background-color: #FFFF00 !important;
+}
+/*.........................................................................................*/
+
+/* partners cards start here */
+
+.theme-dark .partcard{
+color: #000000 !important;
+background-color: #FFFF00 !important;
+}
+.theme-dark .parttext{
+color: #000000 !important;
+}
+.theme-dark .partbtn{
+background: #FFFF00 !important;
+color: #000000 !important;
+border-color: #000000;
+}
+.theme-dark .partimg{
+background: transparent;
+}
+/*.........................................................................................*/
+
+/* footer  start here*/
+.theme-dark .footer-section{
+background-color: #000000;
+border-top: 1px solid #FFFF00;
+}
+.theme-dark .footer-widget-heading h3::before{
+background-color: #FFFF00;
+}
+.theme-dark .copyright-area{
+background-color: #000000;
+border-top: 1px solid #FFFF00;
+
+}
+/*.........................................................................................*/
+
+/* story sec */
+.theme-dark .storygrid{
+filter: grayscale(1);
+}
+.theme-dark .item__details{
+color: #FFFF00 !important;
+}
+.theme-dark #storyswirl{
+/* background-image:url(../image/swirl.png) !important;
+background-repeat: no-repeat;
+width: 90px !important; 
+height: 18px !important;
+filter: grayscale(0) !important; */
+}
+/*.........................................................................................*/
+
+/* swirl divider */
+.theme-dark #swirl{
+/* background-image:url(../image/swirl.png) !important;
+background-repeat: no-repeat;
+width: 90px !important; 
+height: 18px !important;
+filter: grayscale(0) !important; */
+}
+/* ......................................................................................... */
+/* All Categories page */
+.theme-dark .all-cate-data-card{
+  background-color: #FFFF00;
+}
+
+
+/* .theme-dark .all-cate-data-card:hover{
+  background-color: #252525;
+}
+.theme-dark .all-cate-data-card .data_card_img:hover{
+  filter: grayscale(1);
+} */
+/* ....................................................................................... */

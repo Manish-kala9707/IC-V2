@@ -1,0 +1,144 @@
+/* CapitalCities.css */
+
+.CAPITAL img {
+    width: 0px;
+    height: 0px;
+    display: none;
+    
+  }
+  
+  .CAPITAL h4 {
+    font-size: 35px;
+    background-color: black;
+    /* align-items: center; */
+  }
+  
+  .circle-menu a.Shillong:hover {
+    opacity: 0.6;
+    
+  }
+  
+  .circle-menu a.Itanagar:hover {
+    opacity: 0.6;
+  }
+  
+  .circle-menu a.Aizawl:hover {
+    opacity: 0.6;
+  }
+  
+  .circle-menu a.Agartala:hover {
+    opacity: 0.6;
+  }
+  
+  .circle-menu a.Gangtok:hover {
+    opacity: 0.6;
+  }
+  
+  .circle-menu a.Dispur:hover {
+    opacity: 1;
+  }
+  
+  .circle-menu a.Kohima:hover,
+  .circle-menu a.Imphal:hover {
+    opacity: 0.6;
+  }
+  
+  .circle-menu li {
+    list-style: none;
+    display: inline;
+    
+  }
+  
+  .circle-menu {
+    position: relative;
+    width: 35em;
+    height: 35em;
+    border: dashed 0px #cccccc;
+    border-radius: 50%;
+    margin: 5em auto 10em;
+    
+  }
+  
+  .circle-menu a {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8em;
+    height: 8em;
+    line-height: 8em;
+    margin: -3.5em;
+    border-radius: 4em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .circle-menu a.Shillong {
+    transform: rotate(0deg) translate(18em) rotate(0deg);
+  }
+  
+  .circle-menu a.Itanagar {
+    transform: rotate(45deg) translate(18em) rotate(-45deg);
+  }
+  
+  .circle-menu a.Aizawl {
+    transform: rotate(90deg) translate(18em) rotate(-90deg);
+  }
+  
+  .circle-menu a.Agartala {
+    transform: rotate(135deg) translate(18em) rotate(-135deg);
+  }
+  
+  .circle-menu a.Gangtok {
+    transform: rotate(180deg) translate(18em) rotate(-180deg);
+  }
+  
+  .circle-menu a.Dispur {
+    transform: rotate(225deg) translate(18em) rotate(-225deg);
+  }
+  
+  .circle-menu a.Kohima {
+    transform: rotate(270deg) translate(18em) rotate(-270deg);
+  }
+  
+  .circle-menu a.Imphal {
+    transform: rotate(315deg) translate(18em) rotate(-315deg);
+  }
+  
+  .circle-menu img {
+    border-radius: 100%;
+    width: 170px;
+    height: 170px;
+    background-color: black;
+    align-items: center;
+  }
+  
+  .circle-menu h4 {
+    color: #fff;
+    text-align: center;
+    width: 170px;
+  }
+  
+  .circle-menu h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .timeline {
+    white-space: normal;
+    overflow-x: hidden;
+  }
+  
+  .timeline-container {
+    background-color: black;
+    align-items: center;
+  }
+
+  .heading {
+    text-align: center;
+  }
+  
+  

@@ -1,0 +1,499 @@
+.bibilography , .indian-national-bibliography, .intangible-cultural-heritage, .digital-district-repository, .festivals-of-india{
+  --bg-color: #c3faed;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+.timeless-trends, .flagship-events{
+  --bg-color: #dce9ff;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+.retrieved-artefacts-of-india {
+  --bg-color: #e4e0c3;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+ }
+.stories,.gazettes-and-gazetteers {
+  --bg-color: #f6d7d7;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.north-east_archives {
+  --bg-color: #dce9ff;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+
+.union-catalogue, .musical-instruments-of-india{
+  --bg-color: #f9e9b8;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.ajanta, .north-east-archive, .photo-essays{
+  --bg-color:  #c1f6ff;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+.textiles-and-fabrics-of-india {
+  --bg-color: #f9dab8;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.historic-cities-of-india {
+  --bg-color: #fbe5a3;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.snippets {
+  --bg-color: #c1f6ff;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+ 
+.forts-of-india {
+  --bg-color: #e4e0c3;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.e-books {
+  --bg-color: #bee9ff;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.musical-instruments {
+  --bg-color: #fcd2d3;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.archives {
+  --bg-color: #ffe9b4;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.audios {
+  --bg-color: #c3e4e4;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.food-and-culture {
+  --bg-color: #e7e8d0;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.images {
+  --bg-color: #ecd8f1;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.photo-archives {
+  --bg-color: #f4f1c7;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+.photo-eassay{
+   --bg-color: #f4f1c7;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+.other-collections {
+  --bg-color: #f4ead2;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;    
+}
+
+.stories {
+  --bg-color: #f6d7d7;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.paintings {
+  --bg-color: #d2e7f4;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.reports-and-proceedings {
+  --bg-color: #fcd2d3;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.cultural_heritage {
+  --bg-color: #bde7ec;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.videos {
+  --bg-color: #f4f1c7;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.unesco {
+  --bg-color: #eedcfe;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.research-papers {
+  --bg-color: #caebff;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.photo-essay {
+  --bg-color: #ffe9cf;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.rare-books {
+  --bg-color: #ffe3f5;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.manuscripts {
+  --bg-color: #ffefd0;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.museum-collections {
+  --bg-color: #eaf5d9;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.gazetteers {
+  --bg-color: #ffe6e6;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+
+.union-catalogues {
+  --bg-color: #a4f1f3;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: #e9e9e9;
+}
+/*  */
+/* .archive {
+  --bg-color: #ffe9b4;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: rgba(255, 215, 97, 0.48);
+}
+
+.credentialing {
+  --bg-color: #ffd861;
+  --bg-color-light: #ffeeba;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: rgba(184, 249, 211, 0.48);
+}
+
+.wallet {
+  --bg-color: #CEB2FC;
+  --bg-color-light: #F0E7FF;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: rgba(206, 178, 252, 0.48);
+}
+
+.human-resources {
+  --bg-color: #dce9ff;
+  --bg-color-light: #f1f7ff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.manuscript {
+  --bg-color: #c09c3b;
+  --bg-color-light: #F0E7FF;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: rgba(206, 178, 252, 0.48);
+}
+
+.digital {
+  --bg-color: #cf92f1;
+  --bg-color-light: #f1f7ff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: rgba(220, 233, 255, 0.48);
+} */
+
+
+.catacard, .cataparent {
+  align-items: center;
+  display: flex
+;
+  justify-content: center;
+}
+
+.catacard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, .04);
+  flex-direction: column;
+  gap: -20px;
+  height: 321px;
+  margin-top: 0;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: all .3s ease-out;
+  width: 220px;
+}
+
+.catacard:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.catacard:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.catacard:hover .circlecategories {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.catacard:hover .circlecategories:after {
+  background: var(--bg-color-light);
+}
+
+.catacard:hover p {
+  color: var(--text-color-hover);
+
+}
+
+.catacard:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+
+.catacard p {
+  font-size: 19px;
+  color: #4C5656;
+  margin-top: 30px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.circlecategories {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.circlecategories:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  transition: opacity 0.3s ease-out;
+}
+
+.circlecategories svg {
+  z-index: 10000;
+  transform: translateZ(0);
+}
+
+.overlay {
+  width: 118px;
+  position: absolute;
+  height: 118px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 58px;
+  left: 50px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+}
+
+.cata-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cata-header h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 60px;
+  font-family: Bebas Neue;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+span {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  z-index: 1;
+}
+
+/* slider */
+/* @media (max-width: 480px) { */
+ /*  @media only screen and (max-width: 480px)  {
+
+  .catacard {
+    width: 100%;
+    max-width: 80%;
+    height: 100%;
+    gap: 40px;
+    margin: 0 auto;
+
+  }
+  .overlay{
+    margin-left: -20px !important;
+    margin-top: -25px;
+  }
+
+ .catacard p {
+    font-size: 14px;
+  }
+.circle{
+  margin-left: 5px !important;
+  margin-top: 35px;
+}
+}
+ */
+ .cata-lst{
+  padding: 30px !important;
+ }
+
+ /*  */
+ /*Explore btn*/
+.catabtn {
+
+  border-radius: 40px !important;
+  /* background-color: #8b2266; */
+  /* background: linear-gradient(to bottom right, #8b2266 25%, #ff6699 100%); */
+  background: #d34156 !important;
+
+  border: 1px solid #d34156 !important;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 0px;
+  width: 140px;
+  height: 42px;
+  /* transition: all 0.3s; */
+  cursor: pointer;
+  margin-left: 0%;
+  margin-top: 0em;
+  /* box-shadow: 4px 4px 8px rgb(0 0 0 / 25%), 2px 4px 8px rgb(0 0 0 / 22%) */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.catabtn:hover {
+
+  border-radius: 40px;
+  /* background-color: #8b2266; */
+  /* background: linear-gradient(to bottom right, #8b2266 25%, #ff6699 100%); */
+  background: #d34156 !important;
+
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 0px;
+  width: 140px;
+  height: 42px;
+  /* transition: all 0.3s; */
+  cursor: pointer;
+  margin-left: 0%;
+  margin-top: 0em;
+  box-shadow: 0px 0px 0px rgb(0 0 0 / 25%), 1px 1px 8px rgb(0 0 0 / 22%)
+}
+
+.catabtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.catabtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.catabtn:hover span {
+  padding-right: 25px;
+}
+
+.catabtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.catacenter{
+  text-align: center;
+}

@@ -1,0 +1,72 @@
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 45px !important;
+    line-height: 1;
+
+    opacity:.75;
+    color: #151515 !important;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* changes made here if categories and childrens section is not working properly then instead of 'padding: 0' add padding:30px */
+.slick-list {
+    padding: 0px !important;
+}
+
+
+.slick-track {
+    margin: 0 auto;
+}
+
+.slick-prev {
+    left: 6px !important;
+    z-index: 1;
+}
+
+[dir='rtl'] .slick-prev {
+    right: -25px ;
+    left: auto;
+}
+
+.slick-prev:before {
+    content: '←';
+}
+
+[dir='rtl'] .slick-prev:before {
+    content: '→';
+}
+
+.slick-next {
+    right: 30px !important;
+    z-index: 1;
+
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
+.slick-next:before {
+    content: '→';
+}
+
+[dir='rtl'] .slick-next:before {
+    content: '←';
+}
+
+/* @media only screen and (max-width: 480px) {
+    .slick-slider {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .slick-list {
+        width: 100%;
+    }
+
+
+} */
+

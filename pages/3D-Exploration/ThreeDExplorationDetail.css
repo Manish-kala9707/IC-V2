@@ -1,0 +1,137 @@
+/* Header layout */
+.threeDexplorationDetail-header {
+  padding: 10px 15px;
+}
+
+.threeDexplorationDetail-back-icon {
+  font-size: 24px;
+  background-color: #f7c113;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.threeDexplorationDetail-header-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.threeDexplorationDetail-header-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.threeDexplorationDetail-header-button {
+  padding: 5px 8px;
+}
+
+/* Video Styling */
+.threeDexplorationDetail-video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 5px;
+}
+
+.threeDexplorationDetail-video-container video {
+  width: 80%;
+  border-radius: 8px;
+  height: 80vh;
+  border: 2px solid white;
+}
+
+/* Tabs Layout */
+.threeDexplorationDetail-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #e5e7e6;
+  padding: 10px;
+  flex-wrap: wrap;
+  border-bottom: none;
+}
+
+.threeDexplorationDetail-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.threeDexplorationDetail-tabs .nav-link {
+  border: 1px solid black;
+  color: #000;
+  font-weight: normal;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: all 0.3s ease-in-out;
+  min-width: 120px;
+  background-color: #fff;
+}
+
+.threeDexplorationDetail-tabs .nav-link.active {
+  background-color: #f7c113 !important;
+  color: #000;
+  font-weight: bold;
+}
+
+.threeDexplorationDetail-tab-content {
+  background-color: #e5e7e6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .threeDexplorationDetail-video-container video {
+    width: 100%;
+    height: auto;
+  }
+
+  .threeDexplorationDetail-header-title {
+    font-size: 1.2rem;
+  }
+
+  .threeDexplorationDetail-back-icon {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .threeDexplorationDetail-header-button {
+    padding: 4px 6px;
+  }
+}
+
+@media (max-width: 576px) {
+  .threeDexplorationDetail-header-title {
+    font-size: 1rem;
+  }
+
+  .threeDexplorationDetail-back-icon {
+    font-size: 18px;
+    padding: 4px;
+  }
+
+  .threeDexplorationDetail-header-button {
+    padding: 3px 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .threeDexplorationDetail-header-title {
+    font-size: 0.9rem;
+  }
+
+  .threeDexplorationDetail-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .threeDexplorationDetail-tabs .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+}

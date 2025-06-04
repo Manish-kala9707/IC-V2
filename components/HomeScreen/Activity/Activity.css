@@ -1,0 +1,101 @@
+.Activity-container{
+  padding: 2rem;
+  border-radius: 10px;
+  color: black;
+  max-width: 100% !important;
+}
+.Activity-row{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.activity-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.activity-header {
+  background-color: #50163C;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.activity-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.explore-btn {
+  background-color: #f5b400;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 4px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.activity-card img {
+  border-radius: 0; /* no border radius for the image */
+  object-fit: cover;
+}
+
+.artifact-card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.activitycard-box{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 0px;
+  overflow: hidden;
+  border:0px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+}
+.activitycard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.activitycard-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 50% 10px 3% 10px;
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:center;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgba(0, 0, 0, 0.4)), linear-gradient(to top, #000000a1, #00000000);
+}

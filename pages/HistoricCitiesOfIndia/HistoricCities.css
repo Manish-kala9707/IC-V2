@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+
+.parent-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+  align-items:center;
+  justify-content: center;
+}
+
+.hcbanner {
+  width: 90%;
+  border-radius: 10px;
+  border:2px solid rgb(42, 25, 25);
+  height: 480px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+
+  /* filter: brightness(0.5); */
+  display: flex;
+  /* box-shadow: 2px 4px 10px #000; */
+  margin-top: 12px;
+
+}
+
+@media (max-width: 1024px) {
+  .hcbanner {
+    flex: 100%;
+    height: 500px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .hcbanner {
+    flex: 100%;
+    height: 400px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .hcbanner {
+    flex: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .hcbanner {
+    flex: 100%;
+    height: 200px;
+  }
+}
+
+.hc-header {
+  text-align: center;
+  margin-top: 10px !important;
+}
+
+.hc-header h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 60px;
+
+  font-family: Bebas Neue !important;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+
+}
+
+.hccover p {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  margin-bottom: 30px !important;
+
+
+}
+
+/* state  */
+/*  */
+.hc-section {
+  display: none;
+  padding: 1rem;
+
+  margin-top: 15px;
+
+}
+
+/*  */
+@media screen and (min-width: 768px) {
+  .hc-section {
+    padding: 2rem;
+  }
+}
+
+
+/*  */
+@supports (display: grid) {
+  .hc-section {
+    display: block;
+    /* margin-top: 60px; */
+  }
+}
+
+/*  */
+.hc-grid {
+  /* background-color: #000000; */
+  display: grid;
+  /* grid-gap: 20px; */
+  grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: row dense;
+  grid-gap: 3rem;
+  /* max-width: 1440px; */
+  width: 100%;
+  margin-top: 30px;
+  /* margin-left: 120px; */
+
+}
+
+/*  */
+.hc-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #5c5b5b;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  /* background: url('https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop='); */
+  background-size: cover;
+  background-position: center;
+  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  counter-increment: item-counter;
+}
+
+.hc-item:nth-of-type(1n) {
+  background-image: url('../../image/state1.png');
+
+  /* background-image: url('https://images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop='); */
+
+}
+
+.hc-item:nth-of-type(2n) {
+  background-image: url('../../image/state2.png');
+
+  /* background-image: url('https://images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop='); */
+
+}
+
+.hc-item:nth-of-type(3n) {
+  background-image: url('../../image/state3.png');
+
+  /* background-image: url('https://images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop='); */
+
+}
+
+.hc-item:nth-of-type(4n) {
+  background-image: url('../../image/state4.png');
+
+  /* background-image: url('https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop='); */
+}
+
+.hc-item:nth-of-type(5n) {
+  background-image: url('../../image/state5.png');
+
+  /* background-image: url('https://images.unsplash.com/photo-1476097297040-79e9e1603142?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop='); */
+}
+
+.hc-item:nth-of-type(6n) {
+  background-image: url('../../image/state6.png');
+
+  /* background-image: url('https://images.unsplash.com/photo-1476097297040-79e9e1603142?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop='); */
+}
+
+/*  */
+.hc-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hc-item:hover {
+  transform: scale(1.05);
+}
+
+.hc-item:hover:after {
+  opacity: 0;
+}
+
+.hc-item--medium {
+  grid-row-end: span 3;
+}
+
+.hc-item--large {
+  grid-row-end: span 4;
+}
+
+.hc-item--full {
+  grid-column-end: auto;
+}
+
+/*  */
+@media screen and (min-width: 768px) {
+  .hc-item--full {
+    grid-column: 2/-1;
+    grid-row-end: span 2;
+  }
+}
+
+
+.hc-item__details {
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.2em;
+
+  text-align: center;
+  font-family: Bebas Neue;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(29, 29, 29, 0.4482) 32.81%, rgba(28, 28, 28, 0.7636) 64.06%, rgba(0, 0, 0, 0.83) 100%);
+  ;
+  /* background: #fff; */
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  /* color: #828282; */
+}
+
+
+.hc-item__details:before {
+  /* content: counter(item-counter); */
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-right: 0.5em;
+  color: #444;
+}
+
+
+/*  */
+/*  */
+/* Historic cities horizontal timeline */
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.timeline {
+  position: relative;
+  width: 80%;
+  height: 10px;
+  background: linear-gradient(to right, #a40050, #f22e63);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-event {
+  position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-event.top {
+  transform: translateY(-80px);
+}
+
+.timeline-event.bottom {
+  transform: translateY(80px);
+}
+
+.event-box {
+  background: linear-gradient(to right, #a40050, #f22e63);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.event-box:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+
+  .timeline-event {
+    width: 100%;
+    text-align: center;
+    transform: none;
+    margin: 10px 0;
+  }
+}
+
+
+/*Historic cities Cooming soon section */
+/* glider js start here */
+
+.main .container .glider-contain .glider .card-image {
+  margin-right: 1.2rem;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
+  margin: 5px;
+  /* filter for Coming soon added here */
+  filter: grayscale(1);
+
+}
+
+.main .container .glider-contain .glider .card-image:hover {
+  margin-right: 1.2rem;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
+  margin: 5px;
+  /* filter for Coming soon added here */
+  filter: grayscale(0);
+
+}
+
+.main .container .glider-contain .glider .card-image img {
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  /* width and height */
+  width: 100%;
+  height: auto;
+  /* width: 310px;
+height: 227px; */
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 20px;
+
+
+}
+.leaflet-popup-content-wrapper {
+  width: auto;   /* Adjust width based on content */
+  height: auto;  /* Adjust height based on content */
+  max-width: 250px; /* Optional: Prevents it from getting too wide */
+  padding: 10px; /* Ensures spacing around content */
+  overflow: hidden; /* Prevents unwanted scrollbars */
+  word-wrap: break-word; /* Ensures long words break properly */
+}
+
+.leaflet-popup-content{
+  height: 100%;
+  justify-content: center;
+ 
+}
+
+.leaflet-popup-content p{
+ margin-top: 2px !important; 
+ line-height: 1;
+ word-spacing: 0px;
+ margin-bottom: 0px;
+}
+
+.main .container .glider-contain .glider-prev,
+.main .container .glider-contain .glider-next {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background: #ffffff;
+  color: #000000;
+  margin-top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 50%;
+}
+
+.main .container .glider-contain .glider-prev .fas,
+.main .container .glider-contain .glider-next .fas {
+  margin-left: 1rem;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .main .glider-contain .glider-prev,
+  .main .glider-contain .glider-next {
+    display: none;
+
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .main .glider-contain .dots {
+    display: none;
+
+  }
+}
+
+.external-header {
+  text-align: center;
+  margin-top: 60px !important;
+}
+
+.external-header h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 60px;
+  font-family: Bebas Neue;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+
+.hide-scrollbar {
+  overflow: auto;
+  -ms-overflow-style: none;
+  /* IE 11 */
+  scrollbar-width: none;
+  /* Firefox 64 */
+}
+

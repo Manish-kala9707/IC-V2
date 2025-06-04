@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+
+
+.cave9-parent-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+/* Partners caption */
+.cave9-header {
+    text-align: center;
+    margin-top: 30px !important;
+}
+
+.cave9-header h1 {
+    margin: 0;
+    font-size: 32px;
+    /* line-height: 60px; */
+
+    font-family: Bebas Neue !important;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    /* margin-top: 20px; */
+
+}
+
+.cave9-cover p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.cave9-banner {
+    width: 100%;
+    height: 480px;
+    object-fit:contain;
+    background-repeat: no-repeat;
+    background-color: #101010;
+    /* filter: brightness(0.5); */
+    display: flex;
+    /* box-shadow: 2px 4px 10px #000; */
+    margin-top: -16px;
+
+}
+
+@media (max-width: 1024px) {
+    .cave9-banner {
+        flex: 100%;
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .cave9-banner {
+        flex: 100%;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .cave9-banner {
+        flex: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    .cave9-banner {
+        flex: 100%;
+        height: 200px;
+    }
+}
+
+/* vertical line */
+.cave9-vertical {
+    border-left: 1px solid #101010;
+    height: 50px;
+    margin-right: 30px;
+    /* position:absolute; */
+    /* left: 50%; */
+}
+
+/*  */
+.cave9-para {
+    margin-top: 30px;
+    margin-left: 150px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cave9-title {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* 
+.arcqrcode {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+} */
+
+.cave9-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: auto;
+    margin-right: 30px;
+}

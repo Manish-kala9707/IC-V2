@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+
+
+.todayparent-container {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.todaybanner {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    /* background-repeat: no-repeat; */
+
+    /* filter: brightness(0.5); */
+    display: flex;
+    /* box-shadow: 2px 4px 10px #000; */
+    margin-top: -11px;
+   
+
+}
+
+.todaycover h1 {
+    font-family: 'Quicksand' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    /* line-height: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 30px; */
+  }
+  
+  .todaycover p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-top: 20px;
+  }
+
+@media (max-width: 1024px) {
+    .todaybanner {
+        flex: 100%;
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .todaybanner {
+        flex: 100%;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .todaybanner {
+        flex: 100%;
+        height: 300px;
+        background-position: center;
+    
+     
+
+    }
+}
+
+@media (max-width: 300px) {
+    .todaybanner {
+        flex: 100%;
+        height: 200px;
+        background-position: center;
+       
+
+    }
+}
+/* css for year calendr module */
+

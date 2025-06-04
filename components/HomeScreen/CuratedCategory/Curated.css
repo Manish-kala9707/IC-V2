@@ -1,0 +1,164 @@
+/* Main Container */
+.Curated {
+  max-width: 100% !important;
+}
+ 
+/* Row container */
+.Curated-Row {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping */
+  background-color: #4b003a;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 15px;
+   position: relative;
+  color: white;
+  padding: 30px 20px;
+  background-image: url('../../../../src/image/HomepageLogo/Background/Background-Image-Black-Small.webp');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+  overflow: hidden;
+}
+ .Curated-Row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(80, 22, 60, 0.8); /* adjust alpha for opacity */
+  z-index: 0;
+}
+   
+/* Category Title Container */
+.category-main {
+  width: 100%;
+  background: #E5E7E6;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 18px;
+  display: flex;
+  padding: 2px 5px;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+ 
+/* Category Title Text */
+.category-title {
+  display: inline-block; position: relative;
+}
+ 
+/* Column that holds the tiles */
+.Curated-Col {
+  width: 100%; position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+ 
+/* Wrapper for tiles */
+.tile-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  padding-bottom: 10px;
+}
+ 
+/* Hide scrollbar in WebKit browsers */
+.tile-wrapper::-webkit-scrollbar {
+  display: none;
+}
+ 
+/* Single Icon Tile */
+.icon-tile {
+  background-color: #e5e7e6;
+  border: 1px solid gold;
+  border-radius: 8px;
+  padding:5px;
+  text-align: center;
+  min-height: 110px;
+  width: 107px;  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+ 
+/* Hover effect on Icon Tile */
+.icon-tile:hover {
+  transform: translateY(5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgb(116, 112, 107);
+}
+ 
+/* Image inside tile */
+.icon-tile img {
+  max-height: 65px;
+  margin-bottom: 5px;
+  object-fit: contain;
+}
+ 
+/* Title under icon */
+.icon-title-curated {
+  font-size: 13px;  font-family: 'Nunito Sans', sans-serif !important;
+  font-weight: 500;
+  color: black;
+  line-height: 1.2;
+  display: -webkit-box; line-height: 20px;
+  -webkit-line-clamp: 2;       /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
+ 
+/* ---------- Responsive: Mobile screens ---------- */
+@media (max-width: 992px) {
+  .Curated {
+    padding: 2rem 1rem !important;
+  }
+ 
+  .Curated-Row {
+    flex-direction: column;
+    padding: 10px;
+  }
+ 
+  .category-main {
+    font-size: 16px;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+  }
+ 
+  .Curated-Col {
+    justify-content: center;
+    width: 100%;
+  }
+ 
+  .tile-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    overflow-x: visible; /* allow wrapping instead of scrolling */
+  }
+ 
+  .icon-tile {
+    width: 90px;
+    min-height: 100px;
+  }
+ 
+  .icon-tile img {
+    max-height: 40px;
+  }
+ 
+  .icon-title-curated {
+    font-size: 12px;
+  }
+}
+ 
+ 

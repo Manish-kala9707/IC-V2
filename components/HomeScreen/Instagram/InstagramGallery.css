@@ -1,0 +1,81 @@
+.instagram-section {
+  background-color: #50163c;
+  padding: 2rem;
+  color: white;
+  max-width: 100%;
+}
+
+.instagram-scroll {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.insta-card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.insta-card:hover {
+  transform: scale(1.05);
+}
+
+.insta-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* --------------------
+   Responsive Tweaks
+-------------------- */
+
+/* Extra small devices (phones) */
+@media (max-width: 575.98px) {
+  .insta-card {
+    width: 100% !important;
+    height: 200px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Small to medium devices (tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .insta-card {
+    width: 98px !important;
+    height: 120px;
+  }
+}
+
+/* Medium to large devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .insta-card {
+    width: 120px !important;
+    height: 125px;
+  }
+}
+
+/* Extra large devices (desktop and above) */
+@media (min-width: 1200px) {
+  .insta-card {
+    width: 220px;
+    height: 230px;
+  }
+}
+

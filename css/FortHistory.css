@@ -1,0 +1,61 @@
+
+.profilee-card-2 {
+    /* max-width: 300px; */
+    /* width: 240px;
+    height: 400px; */
+    width: 310px;
+    height: 498px;
+    background-color: #363636;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 15px auto;
+    border-radius: 20px;
+    border:"2px solid red"
+}
+
+.profilee-card-2 img {
+    /* transition: all linear 0.25s; */
+    
+}
+
+.profilee-card-2 .profilee-name {
+    position: absolute;
+    /* left: 65px;
+    top: 200px; */
+    color: #FFF;
+    text-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
+    /* transition: all linear 0.25s; */
+
+text-align: center;
+font-family: Bebas Neue;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 4.8px;
+}
+
+
+.profilee-card-2 .profilee-icons {
+    position: absolute;
+    border-radius: 1px;
+    border-style: solid;
+    /* border-width: medium; */
+    bottom: 65px;
+    right: 85px;
+    color: #FFF;
+    width: 133px;
+    height: 41px;
+    /* transition: all linear 0.25s; */
+}
+
+.profilee-icons:hover {
+    /* right: 40px; */
+    color: rgb(255, 255, 255) !important;
+    background: #344c6d !important;
+    border-color: #344c6d !important;
+    cursor: pointer;
+
+}

@@ -1,0 +1,95 @@
+.sidepanel {
+    /* transition: 0.5s; */
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+
+    /* transition: all 800ms cubic-bezier(0.40, -0.45, 0.165, 1.55) !important; */
+
+}
+.d-flex{
+    gap: 15px !important;
+}
+
+
+  /* Search bar on Homepage */
+ /*  .elastic-input[type="search"] {
+    width: 350px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+    
+    
+  }
+  .elastic-input[type="search"]:focus {
+    width: 550px;
+    box-shadow: none;
+    border-color:tomato;
+  } */
+  
+  /* Default styles for all devices */
+.elastic-input[type="search"] {
+  width: 350px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+  /* box-shadow: 20px 20px 60px #00000035, inset -20px -20px 60px #ffffffcb; */
+  /* box-shadow: inset 0px 2px 4px #00000035; */
+
+}
+
+.elastic-input[type="search"]:focus {
+  width: 550px;
+  box-shadow: none;
+  /* border-color: tomato; */
+  box-shadow: inset 3px 3px 4px #00000035;
+
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 820px) {
+  .elastic-input[type="search"] {
+      width: 100%;
+      max-width: 550px;
+      margin-right: 10px;
+  }
+
+  .elastic-input[type="search"]:focus {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .elastic-input {
+   display: none;
+    
+  }
+ 
+}
+
+/* Menu Item css */
+
+ /* Default styles for all devices */
+/*  .menuitems-input[type="search"] {
+  width: 350px !important;
+  
+}
+
+.menuitems-input[type="search"]:focus {
+
+  box-shadow: none !important;
+} */
+
+
+/* Default styles for larger screens */
+.menuitems-input[type="search"] {
+  width: 350px !important;
+}
+
+.menuitems-input[type="search"]:focus {
+  box-shadow: none !important;
+}
+
+/* Media query for smaller screens (adjust the max-width as needed) */
+@media only screen and (max-width: 820px) {
+  .menuitems-input[type="search"] {
+    width: 100% !important; /* Adjust the width for smaller screens */
+  }
+}
+

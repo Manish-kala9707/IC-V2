@@ -1,0 +1,142 @@
+/* Main container styling */
+.App {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+  }
+  
+  /* Header styles */
+  .archive-header {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .archive-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .archive-header img {
+    margin-top: 10px;
+  }
+  
+  /* Carousel item styles */
+  .carousel-item {
+    padding: 0 5px;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Text content area */
+  .text-content {
+    margin-top: 30px;
+  }
+  
+  .text-content h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Responsive styling for large screens (desktops) */
+  @media (min-width: 992px) {
+    .text-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 40px;
+    }
+  
+    .text-content .col-md-4 {
+      width: 30%;
+      padding: 0 15px;
+    }
+  
+    .text-content h2 {
+      font-size: 2rem;
+    }
+  
+    .text-content p {
+      font-size: 1.125rem;
+    }
+  }
+  
+  /* Responsive styling for medium screens (tablets) */
+  @media (max-width: 991px) and (min-width: 768px) {
+    .text-content {
+      margin-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .text-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .text-content p {
+      font-size: 1rem;
+    }
+  
+    .image-wrapper {
+      height: 300px;
+    }
+  }
+  
+  /* Responsive styling for small screens (mobiles) */
+  @media (max-width: 767px) {
+    .text-content {
+      margin-top: 15px;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .text-content h2 {
+      font-size: 1.25rem;
+    }
+  
+    .text-content p {
+      font-size: 0.9rem;
+    }
+  
+    .image-wrapper {
+      height: 250px;
+    }
+  }
+  
+  /* Carousel item adjustments for smaller screens */
+  @media (max-width: 767px) {
+    .carousel-item img {
+      height: 200px;
+      object-fit: cover;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1.1rem;
+    }
+  
+    .carousel-caption h6 {
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Image responsiveness */
+
+  
+  .carousel-item img {
+    border-radius: 10px;
+  }
+  

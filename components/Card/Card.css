@@ -1,0 +1,162 @@
+.news-card {
+  border: 0px solid aqua;
+  margin: 0.5rem;
+  position: relative;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  flex: 1;
+  min-width: auto;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 900px) {
+  .news-card {
+    height: 18rem;
+  }
+}
+
+.news-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.news-card__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 3s ease;
+  backface-visibility: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.news-card__text-wrapper {
+  position: absolute;
+  bottom: 0rem;
+  padding: 1rem;
+  color: white;
+  z-index: 2;
+  width: 100%;
+  transition: background-color 1.5s ease;
+}
+
+/* Responsive title font-size with clamp for smooth scaling */
+.news-card__title {
+  /* You can use clamp or media queries, uncomment one approach below */
+
+  /* Approach 1: clamp for smooth scaling */
+  font-size: clamp(14px, 2vw, 20px);
+
+  /* Approach 2: fixed font-size for desktop */
+  /* font-size: 20px; */
+
+  transition: color 1s ease;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0px;
+  line-height: normal;
+  z-index: 2;
+  position: relative;
+}
+
+/* If you prefer media queries instead of clamp, uncomment below and comment out clamp above */
+/*
+@media (max-width: 900px) {
+  .news-card__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .news-card__title {
+    font-size: 14px;
+  }
+}
+*/
+
+.news-card__details-wrapper {
+  max-height: none;
+  opacity: 1;
+}
+
+@media (min-width: 900px) {
+  .news-card:hover .news-card__text-wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .news-card:hover .news-card__title {
+    color: #FBC02D;
+  }
+
+  .news-card:hover .news-card__image {
+    transform: scale(1.2);
+    z-index: -1;
+  }
+}
+
+.news-card__excerpt small {
+  font-size: 11px;
+}
+
+/* Explore Button */
+.news-card__read-more {
+  background: #FBC02D;
+  color: #000000;
+  display: block;
+  text-align: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-decoration: none;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  position: relative;
+}
+
+.news-card__read-more:hover {
+  background-color: #e0a800;
+}
+
+/* Removed animation and movement for icon */
+.news-card__read-more i {
+  color: #888;
+}
+
+.news-card__share {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: white;
+  z-index: 2;
+}
+
+.news-card__share span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+}

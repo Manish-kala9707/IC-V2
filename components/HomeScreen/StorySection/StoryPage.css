@@ -1,0 +1,211 @@
+/* General Styles */
+.homestory {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 1rem;
+}
+
+.artifacts-section {
+  width: 100% !important;
+  padding: 2rem !important;
+  max-width: 100% !important;
+}
+
+.left-col {
+  height: 100%;
+  flex: 1;
+}
+
+.right-col {
+  height: 100%;
+  flex: 1;
+}
+
+.half-height {
+  height: 50%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.artifact-card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.artifact-card-retrived{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.artifact-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.artifact-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.fw-bold {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.explore-btn {
+  background-color: #f5b400;
+  color: black;
+  border: none;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+
+
+/* Tablet and Laptop - Keep side-by-side layout */
+@media (max-width: 992px) {
+  .homestory {
+    height: auto; 
+  }
+
+  .artifact-card {
+    height: 200px !important;
+  }
+  .artifact-card-retrived{
+    height: 420px
+  }
+
+  .artifact-img {
+    height: 400px; 
+  }
+
+  .right-col {
+    height: 100%;
+    flex: 1;
+  }
+  .fw-bold {
+    font-size: 1.1rem;
+  }
+
+  .explore-btn {
+    font-size: 12px;
+  }
+}
+
+/* Mobile Screens - Stack vertically */
+@media (max-width: 768px) {
+  .homestory {
+    height: auto; 
+  }
+
+  .artifact-card {
+    height: 200px;
+  }
+  .artifact-card-retrived{
+    height: 420px
+  }
+
+  .left-col {
+    flex: none;
+    width: 100%;
+  }
+
+ 
+  .artifact-card-retrived{
+    height: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .artifact-img {
+    height: 250px; /* Reduce image height on mobile */
+  }
+
+  .fw-bold {
+    font-size: 1rem;
+  }
+
+  .explore-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* Extra Small Screens (phones) */
+@media (max-width: 576px) {
+  .homestory {
+    flex-direction: column;
+    border: 2px solid black;
+    padding-top: 15px;
+    border-radius: 5px;
+    height: auto;
+  }
+
+  .artifact-card {
+    height: auto;
+  }
+
+  .artifact-img {
+    height: 200px;
+  }
+
+  .fw-bold {
+    font-size: 0.9rem;
+  }
+
+  .explore-btn {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 400px) {
+  .artifact-card {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .artifact-img {
+    height: 180px;
+  }
+
+  .fw-bold {
+    font-size: 0.8rem;
+  }
+
+  .explore-btn {
+    font-size: 9px;
+    padding: 4px 8px;
+  }
+}

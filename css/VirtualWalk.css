@@ -1,0 +1,108 @@
+.virtu{
+  /*   background-color:#e5e5e5;
+    padding: 20px;
+ */
+}
+.virtual {
+    width: 100%;
+    height: 600px;
+    background-image: url('../image/virtual.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    /* border-top: 1px solid #000000; */
+    box-shadow: 4px 4px 5px rgb(35 35 35 / 30%);
+    margin-top: 60px !important;
+
+  
+  }
+  
+  .virtual-text {
+    position: relative;
+    display: inline-block;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: -2px 6px 5px rgb(0 0 0 / 50%);
+  
+    font-size: 32px;
+  
+    font-family: Bebas Neue;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+  }
+
+/* Virtual btn */
+
+/*Explore btn*/
+.virtualbtn {
+
+    border-radius: 40px;
+    /* background-color: #8b2266; */
+    /* background: linear-gradient(to bottom right, #8b2266 25%, #ff6699 100%); */
+    background: #d34156;
+    font-family: sans-serif;
+    letter-spacing:0.2px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 0px;
+    width: 140px;
+    height: 42px;
+    /* transition: all 0.3s; */
+
+    cursor: pointer;
+    left: 0% ;
+    margin-top: 20px;
+    /* box-shadow: 4px 4px 8px rgb(0 0 0 / 25%), 2px 4px 8px rgb(0 0 0 / 22%) */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
+.virtualbtn:hover {
+
+    border-radius: 40px;
+    /* background-color: #8b2266; */
+    /* background: linear-gradient(to bottom right, #8b2266 25%, #ff6699 100%); */
+    background: #d34156;
+
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 0px;
+    width: 140px;
+    height: 42px;
+    /* transition: all 0.3s; */
+    cursor: pointer;
+    margin-left: 0%;
+    margin-top: 20px;
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 25%), 1px 1px 8px rgb(0 0 0 / 22%)
+}
+
+.virtualbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.virtualbtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.virtualbtn:hover span {
+    padding-right: 25px;
+}
+
+.virtualbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}

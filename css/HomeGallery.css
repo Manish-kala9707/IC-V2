@@ -1,0 +1,212 @@
+.galle {
+    background-color: #151515;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+  }
+
+.homegallery-header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.homegallery-header h1 {
+    margin: 0;
+    font-size: 32px;
+        /* line-height: 100px; */
+   
+    font-family: Bebas Neue;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+.homegallerylit-header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.homegallerylit-header h1 {
+    margin: 0;
+    font-size: 32px;
+        /* line-height: 100px; */
+   
+    font-family: Bebas Neue;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    color: #151515;
+
+}
+
+/* 2nd */
+.image-collage {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.image-collage img {
+    width: 15%;
+    padding: 2px;
+
+}
+
+.image-collage img:hover {
+    opacity: 0.5;
+    transition: 0.6s;
+}
+
+.image-collage .gallery {
+    width: 30%;
+    padding: 2px;
+}
+
+
+/* Story btn */
+
+/*Explore btn*/
+.homegallerybtn {
+
+    border-radius: 40px;
+    /* background-color: #8b2266; */
+    /* background: linear-gradient(to bottom right, #8b2266 25%, #ff6699 100%); */
+    /* background: linear-gradient(to right, #912569 0%, #d34156 100%); */
+background: #d34156;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 0px;
+    width: 140px;
+    height: 42px;
+    /* transition: all 0.3s; */
+
+    cursor: pointer;
+    left: 0% ;
+    margin-top: 20px;
+    /* box-shadow: 4px 4px 8px rgb(0 0 0 / 25%), 2px 4px 8px rgb(0 0 0 / 22%) */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
+.homegallerybtn:hover {
+
+    border-radius: 40px;
+    /* background-color: #8b2266; */
+    /* background: linear-gradient(to bottom right, #8b2266 25%, #ff6699 100%); */
+    background: #d34156;
+
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 0px;
+    width: 140px;
+    height: 42px;
+    /* transition: all 0.3s; */
+    cursor: pointer;
+    margin-left: 0%;
+    margin-top: 20px;
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 25%), 1px 1px 8px rgb(0 0 0 / 22%)
+}
+
+.homegallerybtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.homegallerybtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.homegallerybtn:hover span {
+    padding-right: 25px;
+}
+
+.homegallerybtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+ 
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+
+}
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+.gallitem1{
+    grid-row: span 2;
+}
+.gallitem2{
+
+}
+.gallitem3{
+    
+}
+.gallitem4{
+   
+}
+.gallitem5{
+    grid-row: span 2;
+}
+.gallitem6{
+   
+}
+.gallitem7{
+
+}
+.gallitem8{
+    grid-row: span 2;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+.gallery-image:hover {
+	transform: scale(1.15);
+    filter: grayscale(0.5s);
+}
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		grid-gap: 2rem;
+        /* grid-row: span 2; */
+
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+/* Media query for mobile devices */
+@media (max-width: 400px) {
+    .gallery {
+      /* grid-template-columns: repeat(6, minmax(10rem, 1fr)); */
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

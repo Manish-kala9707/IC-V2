@@ -1,0 +1,56 @@
+.heritage-grid {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "c d d"
+    "e e .";
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-1 { grid-area: a; }
+.card-2 { grid-area: b; }
+.card-3 { grid-area: c; }
+.card-4 { grid-area: d; }
+.card-5 { grid-area: e; }
+
+.heritage-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.heritage-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heritage-grid {
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    grid-template-columns: 1fr;
+  }
+
+  .overlay-text {
+    font-size: 0.8rem;
+  }
+}

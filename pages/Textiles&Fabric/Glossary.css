@@ -1,0 +1,60 @@
+.alphabet-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+ 
+  .alphabet-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ 
+  .alphabet-button {
+    margin: 5px;
+    height: 38px;
+    width: 33px;
+    color: white;
+    background-color: #50163c;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+ 
+  .alphabet-button.active {
+    background-color: #f7c113;
+    color: #000;
+  }
+ 
+  .glossary-content {
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+ 
+  .glossary-entry {
+    margin-bottom: 20px;
+  }
+ 
+  .glossary-entry h5 {
+    font-weight: 600;
+    color: #50163c;
+  }
+ 
+  @media (max-width: 576px) {
+    .alphabet-button {
+      width: 29px;
+      height: 33px;
+      font-size: 14px;
+    }
+ 
+    .glossary-entry h5 {
+      font-size: 16px;
+    }
+ 
+    .glossary-content {
+      padding: 0 10px;
+    }
+  }
+ 
+ 

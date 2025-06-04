@@ -1,0 +1,118 @@
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f5f5f5;
+    height: 120vh;
+}
+
+/* Circle Container */
+.circle-container {
+    position: relative;
+    width: 410px;
+    height: 410px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Circle with smooth rotation */
+.circle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px dotted black;
+    transition: transform 1s ease-in-out;
+    margin-left: 40px;
+}
+
+/* Image positioning in the circle */
+.circle-image-container {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s ease-in-out;
+}
+
+/* Circular images */
+.circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Highlight active image */
+.circle-image-container.active {
+    border: 2px solid #007bff;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.prev-button {
+    left: -50px;
+}
+
+.next-button {
+    right: -50px;
+}
+
+/* Details Section */
+.detail-container {
+    width: 50%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: opacity 0.5s ease-in-out;
+    height: 400px;
+}
+
+/* Fade effect for text changes */
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* Text Styling */
+.detail-container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.detail-container h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #555;
+}
+
+.detail-container p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}

@@ -1,0 +1,102 @@
+import React from 'react'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { useEffect, useState } from "react";
+
+function DidyouKnowDetail() {
+  const [data, setData] = useState([]);
+  const [todayContent, setTodayContent] = useState(null);
+  const [selectedMonth, setSelectedMonth] = useState(getCurrentMonthName());
+  const [displaydata, setDisplaydata] = useState([]);
+  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+  function getCurrentMonthName() {
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const currentMonthIndex = new Date().getMonth();
+    return monthNames[currentMonthIndex];
+  }
+
+  let api = `https://indianculture.gov.in/rest-v1/dyk-date-wise`;
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(api);
+        const jsonData = await response.json();
+        setData(jsonData.search_results);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, [api]);
+  console.log(displaydata);
+  useEffect(() => {
+    const currentDate = new Date().toLocaleDateString("en-GB", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    });
+    const formattedCurrentDate = currentDate
+      .split(" ")
+      .map((part, index) => (index === 1 ? part : part.toUpperCase()))
+      .join("-");
+    const todayContent = data.find((item) => item.field_date_dyk_1 === formattedCurrentDate);
+
+    setTodayContent(todayContent);
+  }, [data]);
+
+  const handleMonthClick = (clickedMonth) => {
+    const filteredData = data.filter((item) => item.field_date_dyk === clickedMonth && item.field_date_dyk_2 === "2023");
+
+    setDisplaydata(filteredData);
+    console.log(displaydata);
+  };
+  return (
+    <div className="Container">
+      <div className="today">
+        {todayContent ? (
+          <>
+            <h1>{todayContent.title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: todayContent.field_did_you_know_text }} />
+          </>
+        ) : (
+          <p>No content available for today.</p>
+        )}
+      </div>
+      <div className="month">
+        <div className="heading" style={{ display: "flex", justifyContent: "space-evenly" }}>
+          <>
+            {monthNames.map((month, index) => (
+              <div
+                key={index}
+                className={month === selectedMonth ? "selected" : ""}
+                onClick={() => {
+                  setSelectedMonth(month);
+                  handleMonthClick(month);
+                }}
+              >
+                {month}
+              </div>
+            ))}
+          </>
+        </div>
+        <div>
+          {displaydata.length > 0 ? (
+            displaydata.map((item, index) => (
+              <div key={index}>
+                <h2>{item.title}</h2>
+                <div dangerouslySetInnerHTML={{ __html: item.field_did_you_know_text }} />
+              </div>
+            ))
+          ) : (
+            <div>No data</div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default DidyouKnowDetail;

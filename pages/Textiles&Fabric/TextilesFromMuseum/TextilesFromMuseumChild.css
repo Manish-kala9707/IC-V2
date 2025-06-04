@@ -1,0 +1,154 @@
+.dynamicTile {
+  padding: 1rem 0;
+}
+
+.item {
+  padding: 0.5rem;
+}
+
+.databox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.databox:hover {
+  transform: scale(1.02);
+}
+
+.banner-img1 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .banner-img1 img {
+    height: 200px;
+  }
+
+  .text-overlay {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-img1 img {
+    height: 150px;
+  }
+
+  .text-overlay {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* Modal Content Styling */
+.modal-content {
+  background-color: #ffffff !important;
+  color: #000000;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Modal Header */
+.modal-header {
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+.modal-title {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+/* Modal Body */
+.modal-body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Image Styling */
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Logo */
+.modal-body img[alt="Logo"] {
+  max-width: 80px;
+  height: auto;
+}
+
+/* Text Content */
+.modal-body p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.modal-body b {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Text Overlay in Grid Item */
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem;
+}
+
+.text-overlay h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+  .modal-title {
+    font-size: 1.2rem;
+  }
+
+  .modal-body p {
+    font-size: 0.95rem;
+  }
+
+  .modal-body img[alt="Logo"] {
+    max-width: 60px;
+  }
+}
+.dataimg{
+    margin-left: 25px;
+}
+

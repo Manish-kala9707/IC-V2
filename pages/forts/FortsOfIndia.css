@@ -1,0 +1,241 @@
+.fort-container {
+  padding: 20px;
+}
+
+.fort-main-image {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.fort-main-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+    vertical-align: middle;
+    width: 100%;
+    line-height: 0;
+    height: 95px !important;
+}
+.fort-main-text {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.fortssearchrow {
+    /* width: 98%; */
+    margin: 0 auto;
+    display: flex
+;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #e9ebec;
+    padding: 10px 0;
+}
+
+.layout--collage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 20px;
+}
+.icp-bgnew h5{line-height: 20px;
+    margin: 0px;
+    padding: 1%;}
+
+.collage-left {
+  position: relative;
+  width: 50%;
+  min-height: 420px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.collage-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collage-right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.collage-row {
+  display: flex;
+  gap: 20px;
+  height: 48%;
+}
+
+.collage-small {
+  position: relative;
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.collage-small img,
+.collage-wide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collage-wide {
+  position: relative;
+  height: 48%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fortofindia-ttitle {
+  position: absolute;
+  bottom: 50px;
+  left: 15px;
+  color: white;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.collage-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  background-color: #ffce00;
+  color: #000;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.collage-btn:hover {
+  background-color: #e0b800;
+}
+
+.fortindicover {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.fortindiimg-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.freedom-fort-banner {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  border-radius: 10px;
+}
+
+.freedom-fort-overlay {
+  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.freedom-fort-overlay h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.freedom-fort-overlay p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.freedom-fort-content {
+  text-align: center;
+  background-color: white;
+}
+
+.foiplayer {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.read-more-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .layout--collage {
+    flex-direction: column;
+  }
+
+  .collage-left,
+  .collage-right {
+    width: 100%;
+  }
+
+  .collage-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .collage-small,
+  .collage-wide {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .layout--collage {
+    flex-direction: column;
+  }
+
+  .collage-left{
+    width: 100%;
+    min-height: 190px;
+  }
+  .collage-right {
+    width: 100%;
+  }
+
+  .collage-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .collage-small,
+  .collage-wide {
+    height: 200px;
+  }
+}

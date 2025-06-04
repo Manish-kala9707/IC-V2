@@ -1,0 +1,241 @@
+import React, { useEffect, useState, useContext } from "react";
+import EarlyBan from "../../image/EarlyBan.png";
+import LaterBan from "../../image/LaterBan.png";
+import { Container, Row, Col } from "react-bootstrap";
+import CavesImg1 from "../../image/cavesimg1.png";
+import CavesImg2 from "../../image/cavesimg2.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Divider from "../../image/SwirlDivider.png";
+import EarlyImg1 from "../../image/earlyimg1.png";
+import EarlyImg2 from "../../image/earlyimg2.png";
+import { ContextData } from "../Store/FetchApiData";
+import EarlyImg3 from "../../image/earlyimg3.png";
+import EarlyImg4 from "../../image/earlyimg4.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "react-i18next";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper";
+import "swiper/swiper-bundle.css"; // Import Swiper styles
+import "./EarlyCaves.css";
+import Card from "../../components/Card/Card";
+import CardDetails from "../../components/Card/CardDetails";
+import ShimmerCardDetails from "../../components/Card/ShimmerCardDetails";
+import AjantaCardDetails from "./AjantaCardDetails";
+import { useLocation, useNavigate } from "react-router-dom";
+function LaterCaves() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [laterChaityagrah, setLaterChaityagrah] = useState([]);
+  const [laterViharas, setLaterViharas] = useState([]);
+  const { fetchedData, nid } = useContext(ContextData);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response1 = await fetch(
+        "https://icvtesting.nvli.in/rest-v1/ajanta-caves?field_ajanta_cave_type_value=Later Cave&field_type_of_early_cave_later_c_value_1=Later Vihāras"
+      );
+      const data1 = await response1.json();
+      setLaterViharas(data1.results);
+      const response2 = await fetch(
+        "https://icvtesting.nvli.in/rest-v1/ajanta-caves?field_ajanta_cave_type_value=Later Cave&field_type_of_early_cave_later_c_value_1=Later Chaityagṛhas"
+      );
+      const data2 = await response2.json();
+      setLaterChaityagrah(data2.results);
+    };
+    fetchData();
+  }, []);
+
+  const { t } = useTranslation();
+
+  return (
+    <>
+      {location && location?.pathname?.includes("title") ? (
+        fetchedData && fetchedData.length > 0 ? (
+          [...laterChaityagrah, ...laterViharas]
+            .filter((x) => x.nid == nid)
+            .map((x) => {
+              return <AjantaCardDetails key={x.nid} detailData={x} />;
+            })
+        ) : (
+          <ShimmerCardDetails />
+        )
+      ) : (
+        <>
+          <div className="ajanta-earlycaves-parent-container">
+            <img
+              src={LaterBan}
+              className="ajanta-earlycaves-banner"
+              alt="Free Banner"
+            />
+          </div>
+
+          <Container className="archive-header">
+            <Row>
+              <Col>
+                <h4>{t("Later Caves")}</h4>
+              </Col>
+            </Row>
+          </Container>
+          <Container className="ajanta-earlycaves-cover">
+            <Row className="justify-content-md-center">
+              <Col>
+                {location.pathname.includes("lang=hi") ? (
+                  <p>
+                    अजंता की पहली गुफाएँ ईसा पूर्व दूसरी शताब्दी और ईसा की पहली
+                    शताब्दी के बीच बनाई गई थीं। ये गुफाएँ चट्टानों को काटकर बनाए
+                    गए बौद्ध मंदिरों के समूह का हिस्सा हैं जो इस क्षेत्र में
+                    सहयाद्रि या पश्चिमी घाट की ढलानों पर स्थित हैं। अजंता की
+                    प्रारंभिक गुफाएँ उपासकों या आम लोगों, भिक्षुओं, व्यापारियों
+                    और आम लोगों द्वारा किए गए दान से बनाई गई थीं। गुफा 12 में एक
+                    वणिज या व्यापारी द्वारा बनाया गया एक नक्काशीदार शिलालेख है।
+                    इसी तरह, गुफा 10 के लिए लकड़ी के अग्रभाग (जो बच नहीं पाया)
+                    सहित गुफाओं के कुछ हिस्सों को व्यक्तिगत दान के माध्यम से
+                    बनाया गया था। इस प्रारंभिक काल में, हमें दो चैत्यगृह या सभा
+                    हॉल मिलते हैं जहाँ उपासक एकत्रित होते थे। इस अवधि के दौरान,
+                    उपास्य या आवासों के साथ अवरक या कक्ष भी बनाए गए थे। आमतौर पर
+                    विहार के नाम से जाने जाने वाले भिक्षु ऐसी तीन गुफाओं (12, 13
+                    और 15ए) में रहते थे।
+                  </p>
+                ) : (
+                  <p>
+                    The first caves at Ajanta were made sometime between the 2nd
+                    century BCE and 1st century CE. These caves are part of a
+                    constellation of rock-cut Buddhist temples that dot the
+                    slopes of the Sahayādri or western ghats in the region. The
+                    Early caves at Ajanta were made through donations made by
+                    upāsakas or laity, monks, traders and ordinary people. There
+                    is a chiselled inscription in Cave 12 made by a vaṇija or
+                    merchant. Similarly, parts of the caves including a wooden
+                    facade (that didn't survive) for Cave 10 were made through
+                    individual donations. In this Early period, we find two
+                    chaityagṛha’s or congregation halls where worshippers
+                    assembled. During this period, upāsaya or dwellings with
+                    avarakas or cells were also created. Commonly known as
+                    vihāras, the monks resided in three such caves (12, 13 and
+                    15A).
+                  </p>
+                )}
+
+                {location.pathname.includes("lang=hi") ? (
+                  <p>
+                    अजंता में बने इन चट्टानों को काटकर बनाए गए मंदिरों ने अपने
+                    लकड़ी के पूर्ववर्तियों की डिजाइन और सौंदर्यबोध की नकल की।
+                    ​​हम अभी भी लकड़ी के राफ्टर्स द्वारा छोड़े गए निशान पा सकते
+                    हैं जो कभी छत को सुशोभित करते थे। बौद्ध धर्म में यह काल
+                    एनिकोनिज्म के लिए भी जाना जाता था। बुद्ध को आम तौर पर उनके
+                    मानव रूप में नहीं दर्शाया जाता था, इसके बजाय उन्हें स्तूप,
+                    एक पेड़, छत्र आदि जैसे विभिन्न प्रतीकों के माध्यम से दर्शाया
+                    जाता था। तो हम गुफा के अंदर चित्रित और इसके बाहर गढ़ी गई कई
+                    बुद्ध छवियों के बारे में क्या सोचते हैं? ये 5वीं शताब्दी ई.
+                    में साइट पर किए गए जीर्णोद्धार का हिस्सा हैं। बाहर की कई
+                    बुद्ध मूर्तियों को भक्तों के दान का श्रेय दिया जाता है। गुफा
+                    10 और 9 के अंदर के एप्स में हमें एक स्तूप भी मिलता है। गुफा
+                    का डिज़ाइन, जो स्तूप के चारों ओर चलने वाले खंभों के साथ एक
+                    यू-आकार का हॉल है, पवित्र स्तूप के चारों ओर परिक्रमा करने के
+                    लिए आदर्श लगता है।
+                  </p>
+                ) : (
+                  <p>
+                    These rock-cut temples made at Ajanta mimicked their wooden
+                    predecessors in design and aesthetic. We can still find
+                    markings left behind by wooden rafters that once adorned the
+                    ceiling. This period in Buddhism was also known for
+                    aniconism. The Buddha was generally not represented in his
+                    human form, instead he was represented through various
+                    symbols like the stūpa, a tree, parasol etc. So what do we
+                    make of the many Buddha images both painted inside the cave
+                    and sculpted outside it? These are part of 5th century CE
+                    renovations performed at the site. The many Buddha
+                    sculptures outside have been attributed to votary donations.
+                    At the apse inside Cave 10 and 9 we also find a stūpa. The
+                    design of the cave, which is a U-shaped hall with pillars
+                    running round the stūpa, seems to be ideal for the
+                    performance of circumambulation around the sacred stūpa.
+                  </p>
+                )}
+              </Col>
+            </Row>
+          </Container>
+          <Container className="archive-header">
+            <Row>
+              <Col lg={12} md={12} sm={12}>
+                <Row>
+                  <h1>{t("Later Chaitygrah")}</h1>
+                </Row>
+                <Row>
+                  <Card page="/" search_results={laterChaityagrah} />
+                </Row>
+              </Col>
+              <Col lg={12} md={12} sm={12}>
+                <Row>
+                  <h1>{t("Later Viharas")}</h1>
+                </Row>
+                <Row>
+                  {
+                    <Swiper
+                      effect={"coverflow"}
+                      grabCursor={true}
+                      centeredSlides={true}
+                      slidesPerView={"auto"}
+                      loop={true}
+                      coverflowEffect={{
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 3,
+                        slideShadows: true,
+                      }}
+                      autoplay={{
+                        delay: 1200,
+                        disableOnInteraction: false,
+                      }}
+                      speed={2000}
+                      pagination={true}
+                      modules={[EffectCoverflow, Pagination, Autoplay]}
+                      className="mySwiper"
+                    >
+                      {fetchedData &&
+                        fetchedData.map((data) => {
+                          return (
+                            <SwiperSlide
+                              onClick={() =>
+                                navigate(
+                                  `${location.pathname}/title=${data.title}/nid=${data.nid}`
+                                )
+                              }
+                            >
+                              <img
+                                className="img-responsive"
+                                src={`http://icvtesting.nvli.in${
+                                  data &&
+                                  data.field_ajanta_category_thumbnail &&
+                                  data.field_ajanta_category_thumbnail.match(
+                                    /src="([^"]+)"/
+                                  )[1]
+                                }`}
+                              />
+                              <div
+                                className="swipetext"
+                                style={{ left: "130px", top: "300px" }}
+                              >
+                                <p style={{ fontSize: "30px" }}>
+                                  <b>{data.title}</b>
+                                </p>
+                              </div>
+                            </SwiperSlide>
+                          );
+                        })}
+                    </Swiper>
+                  }
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+        </>
+      )}
+    </>
+  );
+}
+
+export default LaterCaves;

@@ -1,0 +1,99 @@
+
+ 
+/* .nav-tabs {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem 0.5rem 0 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ddd;
+    justify-content: center;
+  } */
+   
+  /* Each tab: full height, equal width */
+  /* .nav-tabs .nav-link {
+    flex: 1 1 0;
+    text-align: center;
+    padding: 1rem;
+
+    border-radius: 0;
+
+    font-weight: 500;
+    
+    transition: background-color 0.3s ease, color 0.3s ease;
+   
+    border: 1px solid transparent !important;
+    
+    color: #000 !important;
+    background-color: #fff !important;
+    border-color: #dee2e6 !important;
+    margin: 0 7px 0 0 !important;
+    width: 365px;
+   
+   
+  } */
+   
+  /* Hover state */
+  /* .nav-tabs .nav-link:hover {
+    background-color: #dbe4f0;
+    color: white;
+  } */
+   
+  /* Active tab */
+  /* .nav-tabs .nav-link.active {
+    background-color: #fff;
+    color: white;
+    font-weight: 600;
+    box-shadow: inset 0 -3px 0 white;
+    font-weight: bold;
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #dee2e6 #dee2e6 #fff !important;
+  } */
+   
+  /* Remove rounding */
+  /* .nav-tabs .nav-item:first-child .nav-link {
+    border-top-left-radius: 0rem;
+  } */
+   
+  /* .nav-tabs .nav-item:last-child .nav-link {
+    border-top-right-radius: 0rem;
+  } */
+   
+  /* Tab content */
+  /* .tab-content {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+  } */
+   
+  /* .custom-tabs .nav-link {
+    border: 1px solid #000;
+    border-top: 3px solid transparent;
+    color: black;
+  } */
+   
+  /* .custom-tabs .nav-link.active {
+    border-color: black;
+    border-top: 3px solid red;
+    background-color: #212529;
+    color: white;
+  } */
+/*    
+  .nav-link {
+    padding: .5rem .8rem !important;
+  }
+   
+  .nav-fill .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  } */
+   

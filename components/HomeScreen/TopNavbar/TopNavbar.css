@@ -1,0 +1,152 @@
+.Navbarcontainer {
+  height: 35px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.NavbarRow {
+  display: flex;
+  margin: 0px !important;
+  padding: 0px !important;
+  align-items: center;
+  width: 100%;
+}
+
+/* Tiranga flag image */
+.tiranga {
+  width: 20px;
+  height: 18px;
+  margin-top: 0px;
+  border-radius: 2px !important;
+}
+
+/* Government of India text */
+.govText {
+  font-size: 15px;
+}
+.tirangaspan{
+  display: flex;
+  align-items: center;
+}
+
+/* Align both columns vertically */
+.leftTopNavbar,
+.rightTopNavbar {
+  display: flex;
+  align-items: center;
+}
+
+/* Left */
+.leftTopNavbar {
+  justify-content: flex-start;
+  gap: 5px;
+  width: 60%;
+  padding-left: 15px;
+}
+
+/* Right */
+.rightTopNavbar {
+  justify-content: flex-end;
+  padding-right: 15px;
+  width: 40%;
+}
+
+/* Link style */
+.Navbarcontainer a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  gap: 8px;
+}
+
+/* Divider */
+.topdivider {
+  display: inline-block;
+  width: 2px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 10px;
+  height: 1em;
+}
+
+.btnborder,
+.langborder {
+  border: 1px solid;
+  padding: 1.5px;
+  width: 28px;
+  height: 25px;
+  text-align: center;
+}
+
+a:hover {
+  color: #FFCC00 !important;
+}
+
+.hindibtn {
+  color: white !important;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none !important;
+}
+
+.hindibtn.active {
+  color: yellow !important;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .tiranga {
+    width: 20px;
+    height: 15px;
+  }
+
+  .govText {
+    font-size: 13px;
+  }
+
+  .hindibtn {
+    font-size: 12px;
+    padding: 5px 6px;
+  }
+
+  .topdivider {
+    margin: 0 6px;
+    height: 0.8em;
+  }
+
+  .leftTopNavbar,
+  .rightTopNavbar {
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tiranga {
+    width: 18px;
+    height: 18px;
+  }
+
+  .govText {
+    font-size: 15px;
+  }
+
+  .leftTopNavbar,
+  .rightTopNavbar {
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 5px;
+  }
+
+  .hindibtn {
+    font-size: 16px;
+    padding: 4px 5px;
+  }
+
+  .topdivider {
+    margin: 0 5px;
+    height: 0.7em;
+  }
+}

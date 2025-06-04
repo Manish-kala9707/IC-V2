@@ -1,0 +1,59 @@
+.tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tile img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.imgcaption {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(34, 33, 33, 0.55);
+  color: #fff;
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 1.2rem;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .imgcaption {
+    font-size: 1rem;
+    padding: 8px 4px;
+  }
+
+  .tile img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imgcaption {
+    font-size: 0.9rem;
+  }
+
+  .tile img {
+    height: 200px;
+  }
+}
+.databox {
+    border: 0px !important;
+    box-shadow: none !important;
+}
+.databox {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px -1px rgba(151, 171, 187, 0.7);
+    float: left;
+    transform-style: preserve-3d;
+    margin: 0;
+    border: 1px solid #ddd;
+}

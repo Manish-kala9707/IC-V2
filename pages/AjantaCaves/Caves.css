@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+
+
+.ajanta-caves-parent-container {
+    position: relative;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 0px;
+    min-height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+/* Partners caption */
+.ajanta-caves-header {
+    text-align: center;
+    margin-top: 10px ;
+}
+
+.ajanta-caves-header h1 {
+    margin: 0;
+    font-size: 32px;
+    /* line-height: 60px; */
+
+    font-family: Bebas Neue !important;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    /* margin-top: 20px; */
+
+}
+
+.ajanta-caves-cover p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-top: 5px;
+   
+}
+
+.ajanta-caves-banner {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+    /* filter: brightness(0.5); */
+    display: flex;
+    /* box-shadow: 2px 4px 10px #000; */
+    margin-top: -16px;
+
+}
+
+@media (max-width: 1024px) {
+    .ajanta-caves-banner {
+        flex: 100%;
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .ajanta-caves-banner {
+        flex: 100%;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .ajanta-caves-banner {
+        flex: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    .ajanta-caves-banner {
+        flex: 100%;
+        height: 200px;
+    }
+}
+
+/*  */
+.ajanta-caves-image-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .ajanta-caves-image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  .ajanta-caves-image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  .ajanta-caves-image-item:hover img {
+    transform: scale(1.1);
+  }
+  .ajanta-caves-caption {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Transparent black */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 28px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+/* Media Queries for different screen sizes */
+@media (min-width: 768px) {
+    .ajanta-caves-image-item {
+        width: 48%; /* Take up roughly half the container on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .ajanta-caves-image-item {
+        width: 45%; /* Adjust width slightly for wider screens */
+    }
+}

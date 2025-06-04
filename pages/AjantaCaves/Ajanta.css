@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+
+
+.ajanta-parent-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 2px ;
+    justify-content: center;
+}
+
+/* Partners caption */
+.ajanta-header {
+    text-align: center;
+    margin-top: 2px !important;
+}
+
+.ajanta-header h1 {
+    margin: 0;
+    font-size: 32px;
+    /* line-height: 60px; */
+
+    font-family: Bebas Neue !important;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    /* margin-top: 20px; */
+
+}
+
+.ajanta-header h2 {
+    margin: 0;
+    font-size: 24px;
+    /* line-height: 60px; */
+
+    font-family: Bebas Neue !important;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    /* margin-top: 20px; */
+
+}
+
+.ajanta-cover p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-top: 2px;
+}
+
+.ajanta-banner {
+    width: 98%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-repeat: no-repeat;
+    display: flex;
+   
+
+}
+
+@media (max-width: 1024px) {
+    .ajanta-banner {
+        flex: 100%;
+        height: 278px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .ajanta-banner {
+        flex: 100%;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .ajanta-banner {
+        flex: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    .ajanta-banner {
+        flex: 100%;
+        height: 200px;
+    }
+}
+
+.ajanta-banner-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* Center the container horizontally */
+    height: auto;
+    /* Set the desired height for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.ajanta-bg {
+    background-color: black;
+}
+
+.ajanta-player {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
+/*  */
+.ajanta-contain-slider {
+    width: 100%;
+    max-width: 1200px;
+    /* Limit maximum width */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.ajanta-slide-content {
+    position: relative;
+}
+
+.ajanta-slide-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* Ensure images are properly scaled */
+}
+
+.ajanta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent background */
+    color: white;
+    /* opacity: 0; */
+    /* transition: opacity 0.3s ease; */
+    padding: 10px;
+    /* Ensure padding on smaller devices */
+    text-align: center;
+}
+
+.ajanta-slide-content:hover .ajanta-overlay {
+    opacity: 1;
+}
+
+.ajanta-title {
+
+    margin-bottom: 10px;
+
+    font-family: Bebas Neue;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.2px;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+}
+
+.ajanta-caption {
+    font-size: 16px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .ajanta-title {
+        font-size: 22px;
+    }
+
+    .ajanta-caption {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ajanta-title {
+        font-size: 18px;
+    }
+
+    .ajanta-overlay {
+        opacity: 1;
+    }
+
+    .ajanta-caption {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ajanta-title {
+        font-size: 16px;
+    }
+
+    .ajanta-caption {
+        font-size: 12px;
+    }
+
+    .ajanta-overlay {
+        padding: 5px;
+    }
+}
+
+/*  */
+/*  */
+.ajanta-lst-imgs-grid {
+    display: grid;
+    grid-template-areas:
+        "left1 center right1"
+        "left2 center right2";
+    gap: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.ajanta-grid-item {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}
+
+.ajanta-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+ */
+.ajanta-grid-item:hover .ajanta-overlay {
+    opacity: 1;
+}
+
+.ajanta-text {
+    color: white;
+   
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 43.2px;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+}
+
+#caves {
+    grid-area: left1;
+}
+
+#paintings {
+    grid-area: left2;
+}
+
+#stories {
+    grid-area: center;
+}
+
+#material-culture {
+    grid-area: right1;
+}
+
+#sculptures {
+    grid-area: right2;
+}
+
+.ajanta-lst-imgs-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.center {
+    grid-row: span 2;
+    height: 620px;
+}
+
+/* Responsive layout for tablets and smaller devices */
+/* @media (max-width: 768px) {
+    .lst-imgs-grid {
+        grid-template-areas:
+            "left1 center right1"
+            "left2 center right2";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .center {
+        grid-row: unset;
+        height: auto;
+    }
+} */
+
+/* Responsive layout for tablets and smaller devices */
+@media (max-width: 768px) {
+    .ajanta-lst-imgs-grid {
+        grid-template-areas:
+            "left1"
+            "left2"
+            "center"
+            "right1"
+            "right2";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .ajanta-center {
+        grid-row: unset;
+        height: 300px;
+    }
+}
+
+
+/* Responsive layout for mobile devices */
+@media (max-width: 480px) {
+    .ajanta-lst-imgs-grid {
+        grid-template-areas:
+            "left1"
+            "left2"
+            "center"
+            "right1"
+            "right2";
+        grid-template-columns: 1fr;
+    }
+
+    .ajanta-center {
+        grid-row: unset;
+        height: 300px;
+    }
+}
+
+/* modified for ajanta */

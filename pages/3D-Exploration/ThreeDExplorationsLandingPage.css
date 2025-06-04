@@ -1,0 +1,114 @@
+.three-d-page {
+  background-color: #f8f9fa;
+}
+
+.three-description {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+}
+
+.three-exploration-tile {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.three-exploration-tile:hover {
+  transform: scale(1.02);
+}
+
+.three-exploration-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.three-tile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.three-tile-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.three-exploration-tile .btn {
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+}
+
+/* ========== WHAT'S NEW SECTION ========== */
+
+.whats-new-section {
+  margin-top: 4rem;
+}
+
+.whats-new-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+.three-whatsnew-card {
+  height: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.three-whatsnew-card:hover {
+  transform: scale(1.03);
+}
+
+.three-whatsnew-card-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  border-radius: 1rem;
+}
+
+.three-whatsnew-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.explore-btn {
+  font-size: 0.95rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+

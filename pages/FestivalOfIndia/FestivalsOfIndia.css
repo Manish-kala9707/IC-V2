@@ -1,0 +1,965 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+
+
+.figudi-parent-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.slider {
+  position: relative;
+  margin:0 1px;
+  overflow:"hidden";
+  padding:1rem 0;
+}
+
+.slider img {
+  width: 100%;
+  border-radius:10px;
+}
+
+.react-multi-carousel-list {
+padding: 0rem 0 2rem 0;
+}
+
+.custom-dot-list-style button{
+border: none;
+background: rgb(255, 68, 68);
+}
+.react-multi-carousel-dot.react-multi-carousel-dot--active button{
+background: rgb(255, 68, 68) !important;
+}
+/* Partners caption */
+.figudi-header {
+  text-align: center;
+  margin-top: 30px !important;
+}
+
+.figudi-header h1 {
+  margin: 0;
+  font-size: 32px;
+  /* line-height: 60px; */
+
+  font-family: Bebas Neue !important;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  /* margin-top: 20px; */
+
+}
+
+.figudi-card-2 {
+
+  width: 225px;
+  height: 250px;
+  background-color:  #4019f9;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 15px auto;
+  border-radius: 20px;
+}
+
+/* .profile-card-2 img {
+    transition: all linear 0.25s;
+    
+} */
+
+.figudi-card-2 .figudi-name {
+  position: absolute;
+  /* left: 65px;
+    top: 200px; */
+  font-size: 20px;
+  font-family: Bebas Neue;
+  font-weight: 400;
+  color: #FFF;
+  letter-spacing: 1.2px;
+  text-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
+  /* transition: all linear 0.25s; */
+}
+
+
+.figudi-card-2 .figudi-icons {
+  position: absolute;
+  border-radius: 1px;
+  border-style: solid;
+  /* border-width: medium; */
+  font-size: 18px;
+  bottom: 65px;
+  right: 85px;
+  color: #FFF;
+  width: 133px;
+  height: 41px;
+  /* transition: all linear 0.25s; */
+}
+
+.figudi-cover p {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.figudi-banner {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+
+  /* filter: brightness(0.5); */
+  display: flex;
+  /* box-shadow: 2px 4px 10px #000; */
+  margin-top: -16px;
+
+}
+
+@media (max-width: 1024px) {
+  .figudi-banner {
+    flex: 100%;
+    height: 500px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .figudi-banner {
+    flex: 100%;
+    height: 400px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .figudi-banner {
+    flex: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .figudi-banner {
+    flex: 100%;
+    height: 200px;
+  }
+}
+
+.figudi-icons:hover {
+  /* right: 40px; */
+  color: rgb(255, 255, 255) !important;
+  background: #344c6d !important;
+  border-color: #344c6d !important;
+  cursor: pointer;
+
+}
+
+/* slick custom */
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 45px !important;
+    line-height: 1;
+
+    opacity:.75;
+    color: #151515 !important;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* changes made here if categories and childrens section is not working properly then instead of 'padding: 0' add padding:30px */
+.slick-list {
+    padding: 0px !important;
+}
+
+
+.slick-track {
+    margin: 0 auto;
+}
+
+.slick-prev {
+    left: 6px !important;
+    z-index: 1;
+}
+
+[dir='rtl'] .slick-prev {
+    right: -25px ;
+    left: auto;
+}
+
+.slick-prev:before {
+    content: '←';
+}
+
+[dir='rtl'] .slick-prev:before {
+    content: '→';
+}
+
+.slick-next {
+    right: 30px !important;
+    z-index: 1;
+
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
+.slick-next:before {
+    content: '→';
+}
+
+[dir='rtl'] .slick-next:before {
+    content: '←';
+}
+
+/* @media only screen and (max-width: 480px) {
+    .slick-slider {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .slick-list {
+        width: 100%;
+    }
+
+
+} */
+
+
+
+
+.festindia-parent-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 95%;
+}
+
+/* Partners caption */
+.festindia-header {
+  text-align: center;
+  /* margin-top: 60px !important; */
+}
+
+.festindia-headerr {
+    text-align: center;
+    margin-top: 60px !important;
+  }
+
+  .festindia-headerr h1 {
+    margin: 0;
+    font-size: 32px;
+    /* line-height: 60px; */
+  
+    font-family: Bebas Neue !important;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    margin-top: 20px;
+  
+  }
+
+.festindia-header h1 {
+  margin: 0;
+  font-size: 32px;
+  /* line-height: 60px; */
+
+  font-family: Bebas Neue !important;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  margin-top: 20px;
+
+}
+
+.festindia-banner {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 2px solid white;
+    /* filter: brightness(0.5); */
+    display: flex;
+    /* box-shadow: 2px 4px 10px #000; */
+    margin-top: -16px;
+  
+  }
+  
+  @media (max-width: 1024px) {
+    .festindia-banner {
+      flex: 100%;
+      height: 500px;
+    }
+  
+  }
+  
+  @media (max-width: 800px) {
+    .festindia-banner {
+      flex: 100%;
+      height: 400px;
+    }
+  
+  }
+  
+  @media (max-width: 600px) {
+    .festindia-banner {
+      flex: 100%;
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .festindia-banner {
+      flex: 100%;
+      height: 200px;
+    }
+  }
+
+  .festindia-cover p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-top: 30px;
+  }
+  /*  */
+  /*  */
+  /*  */
+
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+} */
+
+.festindia-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 0;
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.festindia-grid-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+#tribal {
+    background-image: url('../../image/fesindiimg3.png');
+    grid-column: span 2;
+    height: 291px;
+}
+
+#fairs {
+    background-image: url('../../image/fesindiimg4.png');
+    grid-column: span 2;
+    height: 291px;
+}
+
+#pan-india {
+    background-image: url('../../image/fesindiimg1.png');
+
+    grid-column: span 3;
+    height: 291px;
+}
+
+#folk {
+    background-image: url('../../image/fesindiimg2.png');
+
+    grid-column: span 1;
+    height: 291px;
+}
+
+.festindia-overlay {
+    position: absolute;
+    bottom: 0;
+    /* background: rgba(10, 0, 0, 0.5); */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(29, 29, 29, 0.4482) 32.81%, rgba(28, 28, 28, 0.7636) 64.06%, rgba(0, 0, 0, 0.83) 100%);;
+
+    color: #fff;
+    width: 100%;
+   
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.4px;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .festindia-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #tribal {
+        grid-column: span 2;
+    }
+
+    #fairs {
+        grid-column: span 2;
+    }
+
+    #pan-india {
+        grid-column: span 2;
+    }
+
+    #folk {
+        grid-column: span 2;
+    }
+
+    .festindia-grid-item {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .festindia-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #tribal {
+        grid-column: span 2;
+    }
+
+    #fairs {
+        grid-column: span 2;
+    }
+
+    #pan-india {
+        grid-column: span 2;
+    }
+
+    #folk {
+        grid-column: span 2;
+    }
+
+    .festindia-grid-item {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .festindia-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .festindia-grid-item {
+        grid-column: span 1;
+        height: 120px;
+    }
+
+    .festindia-overlay {
+        font-size: 0.9em;
+    }
+}
+/*  */
+/*  */
+/*  */
+
+.swiper {
+  position: relative;
+  width: 100% !important;
+  padding-top: 0px !important;
+  padding-bottom: 30px !important;
+}
+
+.swiper-slide {
+  background-position: center !important;
+  background-size: cover !important;
+  width: 400px !important;
+  height: 400px !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  box-shadow: 2px 2px 5px #363636;
+  border-radius: 2rem;
+  object-fit: cover;
+
+}
+
+.swipetext {
+  position: absolute;
+
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #FFF;
+  text-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
+  /* left: 200px;
+  top: 450px; */
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+  .swiper-slide {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 767px) {
+  .swiper-slide {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .swiper-slide img {
+    border-radius: 2rem;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+.festindia-video-sec-wrap {
+  width: 100%;
+ 
+}
+
+.festindia-video-sec {
+  width: 75%;
+  margin: 3em auto;
+  text-align: left;
+  
+}
+
+.festindia-video-sec-middle {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: auto;
+  grid-row-gap: 15px;
+  grid-column-gap: 10px;
+  padding: 0px 0;
+}
+
+.festindia-thumb-wrap {
+  display: inline;
+  cursor: pointer;
+  position: relative;
+}
+
+.festindia-thumb {
+  display: block;
+  width: 100%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  opacity: 1;
+  transition: all .2s ease-in-out;
+}
+
+.festindia-thumb:hover {
+  opacity: .6;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.festindia-thumb-info {
+  display: inline-block;
+  width: 100%;
+  padding: .4em;
+}
+
+.festindia-thumb-title {
+  color: #000000;
+  margin: 0;
+  font-size: 1em;
+
+  font-family: Quicksand;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: justified;
+  
+
+}
+.festindia-days-title{
+  font-family: Bebas Neue;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 38.4px;
+  letter-spacing: 0.2em;
+  text-align:start;
+}
+
+
+.festindia-video-sec-title {
+  font-weight: bolder;
+  font-size: 1.4em;
+  color: #f5f5f5;
+  margin: 5px 0 10px 10px;
+}
+
+
+@media only screen and (max-width: 1440px) {
+  .festindia-video-sec-middle {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .festindia-video-sec-middle {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 756px) {
+  .festindia-video-sec-middle {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 496px) {
+  .festindia-video-sec-middle {
+      grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .festindia-video-sec {
+      width: auto;
+      max-width: 100%;
+      padding: auto;
+  }
+
+}
+
+/*  */
+/*  */
+/* Disclaimer */
+
+/*  */ 
+
+.festindia-error {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  background: #FF9800;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px -3px #111;
+  
+}
+
+
+.festindia-error__titlee {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+ 
+}
+.festindia-error__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+
+}
+.festindia-bg{
+  background-color: #E2D8C6;
+  ;
+}
+
+/*  */
+/*  */
+/*  */
+.neamain-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.neamain-image-item {
+  position: relative;
+  width: 100%;
+  max-width: 450px; /* Limit the max width to 450px */
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: 50px;
+
+
+}
+
+.neamain-image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.culilary-image{
+  width: 97%;
+  height: 60%;
+  object-fit: contain;
+}
+.neamain-caption {
+  text-align: left;
+  /* padding-top: 10px; */
+  font-size: 1rem;
+  color: #333; /* Customize text color */
+}
+
+/* Media Queries for different screen sizes */
+@media (min-width: 768px) {
+  .neamain-image-item {
+      width: 48%; /* Take up roughly half the container on larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .neamain-image-item {
+      width: 45%; /* Adjust width slightly for wider screens */
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+
+
+.fibudaha-parent-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+/* Partners caption */
+.fibudaha-header {
+  text-align: center;
+  margin-top: 30px !important;
+}
+
+.fibudaha-header h1 {
+  margin: 0;
+  font-size: 32px;
+  /* line-height: 60px; */
+
+  font-family: Bebas Neue !important;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  /* margin-top: 20px; */
+
+}
+
+.fibudaha-card-2 {
+  /* max-width: 300px; */
+  /* width: 240px;
+    height: 400px; */
+  width: 225px;
+  height: 250px;
+  background-color: #6d6593;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 15px auto;
+  border-radius: 20px;
+}
+
+/* .profile-card-2 img {
+    transition: all linear 0.25s;
+    
+} */
+
+.fibudaha-card-2 .fibudaha-name {
+  position: absolute;
+  /* left: 65px;
+    top: 200px; */
+  font-size: 14px;
+  font-family: Bebas Neue;
+  font-weight: 400;
+  color: #FFF;
+  letter-spacing: 1px;
+  top: 123px;
+  left: 25px;
+  text-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
+  /* transition: all linear 0.25s; */
+}
+
+
+.fibudaha-card-2 .fibudaha-icons {
+  position: absolute;
+  border-radius: 1px;
+  border-style: solid;
+  /* border-width: medium; */
+  font-size: 18px;
+  bottom: 65px;
+  right: 85px;
+  color: #FFF;
+  width: 133px;
+  height: 41px;
+  top: 170px;
+  left: 40px;
+  /* transition: all linear 0.25s; */
+}
+
+.fibudaha-cover p {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.fibudaha-banner {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+
+  /* filter: brightness(0.5); */
+  display: flex;
+  /* box-shadow: 2px 4px 10px #000; */
+  margin-top: -16px;
+
+}
+
+@media (max-width: 1024px) {
+  .fibudaha-banner {
+    flex: 100%;
+    height: 500px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .fibudaha-banner {
+    flex: 100%;
+    height: 400px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .fibudaha-banner {
+    flex: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .fibudaha-banner {
+    flex: 100%;
+    height: 200px;
+  }
+}
+
+.fibudaha-icons:hover {
+  /* right: 40px; */
+  color: rgb(255, 255, 255) !important;
+  background: #344c6d !important;
+  border-color: #344c6d !important;
+  cursor: pointer;
+
+}
+
+/* slick custom */
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 45px !important;
+    line-height: 1;
+
+    opacity:.75;
+    color: #151515 !important;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* changes made here if categories and childrens section is not working properly then instead of 'padding: 0' add padding:30px */
+.slick-list {
+    padding: 0px !important;
+}
+
+
+.slick-track {
+    margin: 0 auto;
+}
+
+.slick-prev {
+    left: 6px !important;
+    z-index: 1;
+}
+
+[dir='rtl'] .slick-prev {
+    right: -25px ;
+    left: auto;
+}
+
+.slick-prev:before {
+    content: '←';
+}
+
+[dir='rtl'] .slick-prev:before {
+    content: '→';
+}
+
+.slick-next {
+    right: 30px !important;
+    z-index: 1;
+
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
+.slick-next:before {
+    content: '→';
+}
+
+[dir='rtl'] .slick-next:before {
+    content: '←';
+}
+
+/* @media only screen and (max-width: 480px) {
+    .slick-slider {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .slick-list {
+        width: 100%;
+    }
+
+
+} */
+
+
